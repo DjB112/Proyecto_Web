@@ -189,7 +189,7 @@ img:nth-child(5) {
  .item6 {
   grid-column-start: 1;
   grid-column-end: 5;
-  height: 30vw;
+  height: auto;
 }
 .item6 h2{
   color: white;
@@ -199,7 +199,7 @@ img:nth-child(5) {
   width: 90%;
   margin: auto;
   list-style: none;
-  padding: 20px;
+  padding: 0px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -217,6 +217,7 @@ img:nth-child(5) {
 .modo {
   visibility: hidden;
   opacity: 0;
+  position: fixed;
 }
 
 .modo:target {

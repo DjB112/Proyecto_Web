@@ -1,10 +1,9 @@
-const fulImgBox = document.getElementById("fulImgBox"),
-fulImg = document.getElementById("fulImg");
-
-function openFulImg(reference){
-    fulImgBox.style.display = "flex";
-    fulImg.src = reference
+let contenedor
+function cargar_imagen(valor){
+    var x=document.getElementById(valor);
+    document.getElementById("monitor").src = x.src;
+    contenedor = x.src;    
 }
-function closeImg(){
-    fulImgBox.style.display = "none";
+function siguiente_imagen(){
+
 }

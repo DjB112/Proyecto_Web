@@ -41,21 +41,21 @@
         <div class="grid-item item6">
             <h2>Galeria - Fase de Grupo</h2>
             <ul class="galeria">
-                <li><a href="#img1"><img src="img/1.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/2.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/3.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/4.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/5.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/6.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/7.jpg" alt=""></a></li>
-                <li><a href="#"><img src="img/8.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja1')"><img id="caja1" src="img/1.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja2')"><img id="caja2" src="img/2.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja3')"><img id="caja3" src="img/3.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja4')"><img id="caja4" src="img/4.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja5')"><img id="caja5" src="img/5.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja6')"><img id="caja6" src="img/6.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja7')"><img id="caja7" src="img/7.jpg" alt=""></a></li>
+                <li><a href="#img" onclick="cargar_imagen('caja8')"><img id="caja8" src="img/8.jpg" alt=""></a></li>
             </ul>
-            <div class="modo" id="img1">
+            <div class="modo" id="img">
                 <h3>Foto 1</h3>
                 <div class="imagen">
                     <a href="">&#60;</a>
-                    <a href=""><img src="img/1.jpg" alt=""></a>
-                    <a href="">></a>
+                    <a href=""><img id="monitor" src="" alt=""></a>
+                    <a href="" onclick="siguiente_imagen()">></a>
                 </div>
                 <a class= "cerrar" href="">X</a>
             </div>
