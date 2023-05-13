@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-image: linear-gradient(to Bottom, #09203f 0%, #537895 100%);    
     margin: 0px auto;
@@ -190,11 +190,30 @@ img:nth-child(5) {
   grid-column-start: 1;
   grid-column-end: 5;
   height: auto;
+  margin: 3px;
 }
-.item6 h2{
+.item6 h2:first-child {
+  /* -webkit-text-stroke: 0.1px rgb(5, 5, 5);
+  -webkit-text-fill-color: rgb(255, 255, 255); */
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Caveat', cursive;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.item6 h2:not(:first-child) {
   color: white;
   text-align: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: #00A7E1;
 }
+
 .galeria {
   width: 90%;
   margin: auto;
@@ -207,17 +226,44 @@ img:nth-child(5) {
 }
 .galeria li {
   margin: 5px;
-
+  background-image: linear-gradient(to top, #565A61 0%, #e2e8ec 100%);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .galeria img {
+  margin: 5px 5px 3px 5px;
+  padding: 0;
+  border-radius: 5px;
   width: 150px;
   height: 100px;
 }
-
+.galeria img:hover {
+  transform: scale(1.2,1.2) rotate(-4deg);
+  transition-duration: 1s;
+}
+.galeria h4{
+  margin: 0 5px 3px 5px;
+  padding: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  background-color: #003459;
+  text-align: center;
+}
+.galeria p {
+  margin: 0 0 5px 5px;
+  padding: 0;
+  color: black;
+  width: 150px;
+  font-size: 14px;
+}
 .modo {
   visibility: hidden;
   opacity: 0;
-  position: fixed;
+  /* position: fixed; */
+  display: flex;
+  flex-direction: column;
 }
 
 .modo:target {
@@ -247,35 +293,38 @@ img:nth-child(5) {
   align-items: center;
 }
 
-.imagen a {
+.imagen div {
   color: white;
   font-size: 40px;
   text-decoration: none;
   margin: 0 10px;
+  cursor: pointer;
 }
-.imagen a:nth-child(2) {
+
+.imagen a {
   margin: 0;
   height: 100%;
   flex-shrink: 2;
 }
+
 .imagen img {
-  width: 500px;
-  height: 100%;
+  width: 65vw;
+  height: auto;
   max-width: 100%;
   border: 7px solid white;
   box-sizing: border-box;
 }
 
 .cerrar {
-  display: block;
+  /* display: block; */
   background: white;
   width: 25px;
   height: 25px;
-  margin: 15px auto;
+  margin: auto;
   text-align: center;
   text-decoration: none;
   color: black;
-  padding: 5px;
+  padding: 0;
   border-radius: 50%;
   line-height: 25px;
 }
